@@ -8,7 +8,7 @@ class Drop{
   void fall(){
     y = y+ yspeed;
     float grav = map(z, 0,20,0,0.05);
-    yspeed = yspeed + grav;  // speed keeps incresing as theyre falling 
+    yspeed = yspeed + grav;  // speed keeps increasing as theyre falling 
     
     if (y > height) {
       y = random(-200,-100); //each raindrop is starting back at the top 
