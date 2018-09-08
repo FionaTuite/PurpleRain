@@ -8,7 +8,7 @@ class Drop{
   void fall(){
     y = y+ yspeed;
     float grav = map(z, 0,20,0,0.05);
-    yspeed = yspeed + grav;  // speed keeps increasing as theyre falling 
+    yspeed = yspeed + grav;  // speed keeps increasing as they're falling 
     
     if (y > height) {
       y = random(-200,-100); //each raindrop is starting back at the top 
@@ -19,7 +19,7 @@ class Drop{
   void show() {
     float thick = map(z,0,50,1,3); //goes between 0 and 50 , it's 1px wide if further away, 3px wide if close 
     strokeWeight(thick);
-    stroke(138,43,226); //color of raindrops
-    line(x,y,x,y+len); //size of drop, end y is how long is the drop
+    stroke(138,43,226); //colour of raindrops
+    line(x,y,x,y+len); //size of drop, end y is how long the drop is
   }
 }
